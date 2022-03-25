@@ -1,0 +1,62 @@
+ [
+    {
+      "id": "1",
+      "price": "985.00",
+      "productName": "Acer",
+      "imageUrl":"./images/acer.jpg"
+    },
+    {
+      "id": "2",
+      "price": "578.00",
+      "productName": "Apple",
+      "imageUrl":"./images/apple.jpg"
+    },
+    {
+      "id": "3",
+      "price": "938.00",
+      "productName": "Asus",
+      "imageUrl":"./images/asus.jpg"
+    },
+    {
+      "id": "4",
+      "price": "130.00",
+      "productName": "Dell",
+      "imageUrl":"./images/dell.jpg"
+    },
+    {
+      "id": "5",
+      "price": "222.00",
+      "productName": "HP",
+      "imageUrl":"./images/hp.jpg"
+    },
+    {
+      "id": "6",
+      "price": "144.00",
+      "productName": "LG",
+      "imageUrl":"./images/Lg.jpg"
+    },
+    {
+      "id": "7",
+      "price": "623.00",
+      "productName": "Sony",
+      "imageUrl":"./images/sony.jpg"
+    },
+    {
+      "id": "8",
+      "price": "25.00",
+      "productName": "Toshiba",
+      "imageUrl":"./images/toshiba.jpg"
+    },
+    {
+      "id": "9",
+      "price": "210.00",
+      "productName": "Samsung",
+      "imageUrl":"./images/samsung.jpg"
+    },
+    {
+      "id": "10",
+      "price": "671.00",
+      "productName": "Walton",
+      "imageUrl":"./images/walton.jpg"
+    }
+  ]
