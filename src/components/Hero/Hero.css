@@ -1,5 +1,24 @@
 .allCards {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 30px;
+}
+#HeroArea{
+    color: #ffffff;
+}
+.cartItem {
+    background-color: #ffffff;
+    color: #202020ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttonGrp {
+    display: flex;
+    flex-direction: column;
+}
+.buttonGrp button{
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 0;
 }

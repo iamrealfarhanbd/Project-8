@@ -4,7 +4,7 @@ const Cart = (props) => {
     const {productName} = props.cart
     return (
         <div>
-            <h3>Name: {productName}</h3>
+            <h3>Product: {productName}</h3>
         </div>
     );
 };

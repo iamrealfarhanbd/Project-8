@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-
+import Swal from 'sweetalert2'
 import './Hero.css'
 
 const Hero = () => {
@@ -19,10 +19,16 @@ const Hero = () => {
 const cartHandler = (selectedProduct)=>{
     const newCart = [...carts , selectedProduct];
     const exists = carts.find(product => product.id === selectedProduct.id );
-    if(!exists && carts.length < 4){
+  
+   
+     if(carts.length > 3 ){
+        Swal.fire('Not More then 4 Item');
+    }
+    else if(!exists ){
         setCarts(newCart);
-    }else{
-        alert('already added')
+    }
+    else{
+        Swal.fire('Already Added');
     }
     console.log(carts.id)
     console.log(carts)
@@ -30,13 +36,16 @@ const cartHandler = (selectedProduct)=>{
 // random Name Or Item Generator     
 const randomNumber = (carts)=>{
     console.log(carts)
-    if(carts.length >= 1 ){
+
         const randomName = carts[Math.floor(Math.random() * carts.length)];
         setRandomNames(randomName);
         console.log(randomName);
-    }else{
-        console.log("oooo")
-    }
+        Swal.fire(
+            'Luck Name!',
+            `Product Is ${randomName.productName}`,
+            'success'
+          )
+   
 }
 // Cart Clear Handler
 const clearCart =()=>{
@@ -44,8 +53,9 @@ const clearCart =()=>{
     setRandomNames([])
 }
     return (
-        <div>
+        <>
             <div className="container" id="HeroArea">
+                
                 <div className="row">
                     <div className="col-md-8">
                         <div className="allCards">
@@ -53,16 +63,18 @@ const clearCart =()=>{
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="cartItem">
+                        <div className="cartItem ">
                             <h3> {carts.map(cart=> <Cart key={cart.id} cart={cart} />)} </h3>   
-                            <h3> Name: {randomNames.productName} </h3>   
-                            <button onClick={()=>randomNumber(carts)}>Randorm</button> 
-                            <button onClick={clearCart}>clearCart</button> 
+                            
+                            <div className="buttonGrp">
+                                <button onClick={()=>randomNumber(carts)} className="btn btn-success">Random Name</button> 
+                                <button onClick={clearCart} className="btn btn-danger">Remove Name</button> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
