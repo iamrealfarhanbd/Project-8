@@ -1,6 +1,6 @@
 .allCards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 #HeroArea{
@@ -22,3 +22,25 @@
     padding: 10px;
     margin: 5px 0;
 }
+  
+    /* Tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .allCards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    
+  }
+  /* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  
+    .allCards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 60;
+    }
+    .cartItem {
+        margin-top: 50px;
+     }
+  }

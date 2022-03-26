@@ -1,0 +1,12 @@
+[
+    {
+      "id": "1",
+      "question":"How does React work?",
+      "answer":"The most famous Facebook created react. We can create react components using JSX.Then Render Them on the web using DOM react, also for mobile app with react native. React is extremely fast and flexible. In React JSX gets converted to many React.createElement function calls than each of them return the object."
+    },
+    {
+      "id": "2",
+      "question":"Difference between props &  state?",
+      "answer":"In react there are important two data manipulation methods. One is props and the other is a state. A state can be initialized with the help of props. With the help of Props, we can make components reusable. But when we look into the state it doesn't do the same. It cannot make components reusable. Props are immutable and the state is mutable."
+    }
+]

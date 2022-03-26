@@ -1,0 +1,32 @@
+#cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid #f08ecb;
+    margin: 10px 0;
+    border-radius: 14px;
+    padding: 7px;
+}
+
+#cartItem img {
+    width: 26%;
+}
+
+
+  
+    /* Tab */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        #cartItem {
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-between;
+            border: 5px solid #f08ecb;
+            margin: 10px 0;
+            border-radius: 14px;
+            padding: 7px;
+        }
+        #cartItem img {
+            width: 30%;
+        }
+      }
