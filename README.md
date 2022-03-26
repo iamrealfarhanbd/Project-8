@@ -1,5 +1,20 @@
 # Ebazar Shop 
-[Ebazar Shop ](https://programminghero-a8.netlify.app/).
+[Ebazar Shop Webiste](https://programminghero-a8.netlify.app/)
+
+### Task
+1.Add To Cart Handler
+2.Cart Icon added to Button
+4.Random Item Select Handler
+5.Remove Item Handler
+6.Responsive Site
+7.Dummy Json Data Create
+8.Alert/Condition
+9.Question And Answer
+10.Rander Cart Item
+11.Remover Rander cart Item By ID
+
+
+
 
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

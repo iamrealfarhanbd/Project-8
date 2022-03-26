@@ -57,7 +57,8 @@ const randomNumber = (carts)=>{
         setRandomNames(randomName);
  
           Swal.fire({
-            title: `Your Lucky Product is: <b>${randomName.productName}</b>`,
+
+            title: ` You Win <b>${randomName ?  randomName?.productName + " Product"  : "Nothing </br> Bad Luck" }</b>`,
             width: 600,
             padding: '3em',
             color: '#716add',
@@ -72,15 +73,31 @@ const randomNumber = (carts)=>{
 }
 // Cart Clear Handler
 const clearCart =()=>{
-    setCarts([])
-    setRandomNames([])
+ 
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Remove it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            setCarts([])
+            setRandomNames([])
+          Swal.fire(
+            'Deleted!',
+            'Your Item has been Removed.',
+            'success'
+          )
+        }
+      })
 }
 const trashHandler= (id)=>{
-    console.log(id);
-
     const newList = carts.filter((item) => item.id !== id);
     setCarts(newList);
-    console.log(newList);
+  
 }
 
     return (
