@@ -12,6 +12,8 @@ Live WebSit Link: [Ebazar Shop](https://programminghero-a8.netlify.app/)
 9. Question And Answer
 10. Rander Cart Item
 11. Remover Rander cart Item By ID
+12. 12 item added
+13. destructuring and folder structure well 
 
 
 
