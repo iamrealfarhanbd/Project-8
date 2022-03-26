@@ -7,56 +7,68 @@
     },
     {
       "id": "2",
-      "price": "578.00",
+      "price": "1,90,000",
       "productName": "Apple",
       "imageUrl":"./images/apple.jpg"
     },
     {
       "id": "3",
-      "price": "938.00",
+      "price": "43,800",
       "productName": "Asus",
       "imageUrl":"./images/asus.jpg"
     },
     {
       "id": "4",
-      "price": "130.00",
+      "price": "13,000",
       "productName": "Dell",
       "imageUrl":"./images/dell.jpg"
     },
     {
       "id": "5",
-      "price": "222.00",
+      "price": "22,200",
       "productName": "HP",
       "imageUrl":"./images/hp.jpg"
     },
     {
       "id": "6",
-      "price": "144.00",
+      "price": "14,400",
       "productName": "LG",
       "imageUrl":"./images/Lg.jpg"
     },
     {
       "id": "7",
-      "price": "623.00",
+      "price": "62,300",
       "productName": "Sony",
       "imageUrl":"./images/sony.jpg"
     },
     {
       "id": "8",
-      "price": "25.00",
+      "price": "35,000",
       "productName": "Toshiba",
       "imageUrl":"./images/toshiba.jpg"
     },
     {
       "id": "9",
-      "price": "210.00",
+      "price": "51,000",
       "productName": "Samsung",
       "imageUrl":"./images/samsung.jpg"
     },
     {
       "id": "10",
-      "price": "671.00",
-      "productName": "Walton",
-      "imageUrl":"./images/walton.jpg"
+      "price": "67,100",
+      "productName": "Lenovo",
+      "imageUrl":"./images/lenovo.jpg"
+    },
+    {
+      "id": "11",
+      "price": "97,100",
+      "productName": "MSI",
+      "imageUrl":"./images/MSI.jpg"
+    },
+    {
+      "id": "12",
+      "price": "98,700",
+      "productName": "Razer",
+      "imageUrl":"./images/Razer.jpg"
     }
   ]
