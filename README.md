@@ -1,5 +1,5 @@
 # Ebazar Shop 
-[Ebazar Shop Webiste](https://programminghero-a8.netlify.app/)
+Live WebSit Link: [Ebazar Shop](https://programminghero-a8.netlify.app/)
 
 ### Task
 1.Add To Cart Handler
