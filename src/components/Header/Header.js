@@ -6,7 +6,7 @@ const Header = () => {
                 <div className="container" id="Header">
                     <div className="row">
                         <h2>Ebazar Shop</h2>
-                        <p>Check Your Luck And Win Random Laptop</p>
+                        <p>Check Your Luck And Win Any Laptop</p>
                     </div>
                 </div>
         </div>

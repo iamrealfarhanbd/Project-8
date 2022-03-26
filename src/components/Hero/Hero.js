@@ -9,12 +9,14 @@ const Hero = () => {
     const [products , setProducts] = useState([]);
     const [carts , setCarts] = useState([]);
     const [qnA , setQnA] = useState([]);
-    const [randomNames , setRandomNames] = useState([]);
+
+    // Dummy Data Loaded
     useEffect(()=>{
         fetch('dummyData.json')
         .then(res=>res.json())
         .then(data => setProducts(data))
     },[])
+    // QNA Loaded
     useEffect(()=>{
         fetch('QuestionAnswer.json')
         .then(res=>res.json())
@@ -51,13 +53,9 @@ const cartHandler = (selectedProduct)=>{
 }
 // random Name Or Item Generator     
 const randomNumber = (carts)=>{
-    console.log(carts)
 
         const randomName = carts[Math.floor(Math.random() * carts.length)];
-        setRandomNames(randomName);
- 
           Swal.fire({
-
             title: ` You Win <b>${randomName ?  randomName?.productName + " Product"  : "Nothing </br> Bad Luck" }</b>`,
             width: 600,
             padding: '3em',
@@ -85,7 +83,7 @@ const clearCart =()=>{
       }).then((result) => {
         if (result.isConfirmed) {
             setCarts([])
-            setRandomNames([])
+      
           Swal.fire(
             'Deleted!',
             'Your Item has been Removed.',
